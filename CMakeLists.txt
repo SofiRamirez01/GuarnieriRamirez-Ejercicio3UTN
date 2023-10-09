@@ -16,4 +16,8 @@ add_executable(GuarnieriRamirez_Ejercicio3UTN
         Cadete.h
         Empleado.h
         Gerente.h
+        ReciboDeSueldo.h
+        Bono.h
+        BonoPorPresentismo.h
+        BonoPorResultado.h
 )
