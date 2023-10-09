@@ -15,4 +15,5 @@ add_executable(GuarnieriRamirez_Ejercicio3UTN
         Cadete.h
         Cadete.h
         Empleado.h
+        Gerente.h
 )

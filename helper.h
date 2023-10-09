@@ -2,7 +2,7 @@
 // Created by River on 6/10/2023.
 //
 
-# include "SistemaLiquidadorDeSueldo.h"
+/# include "SistemaLiquidadorDeSueldo.h"
 # include "Cadete.h"
 # include "Empleado.h"
 # include "Gerente.h"
