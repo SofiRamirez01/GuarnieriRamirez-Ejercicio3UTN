@@ -9,9 +9,6 @@ using namespace std;
 
 int main() {
 
-    Cadete c("Javier", "Gerente", 1213,2,10);
-    c.setSueldoNeto();
-
-    cout << "Sueldo de " << c.getNombre() << ": $" << c.getSueldoNeto() << endl;
+    cout << ("Hello, World!\n");
     return 0;
 }

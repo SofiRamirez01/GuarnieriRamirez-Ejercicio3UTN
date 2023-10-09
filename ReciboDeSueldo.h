@@ -1,5 +1,5 @@
 //
-// Created by sofiv on 9/10/2023.
+// Created by River on 9/10/2023.
 //
 
 #ifndef GUARNIERIRAMIREZ_EJERCICIO3UTN_RECIBODESUELDO_H
