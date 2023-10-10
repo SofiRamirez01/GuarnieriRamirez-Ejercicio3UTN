@@ -7,6 +7,11 @@
 # include "Empleado.h"
 # include "Cadete.h"
 # include "Gerente.h"
+# include "Bono.h"
+# include "BonoPorPresentismo.h"
+# include "BonoPorResultado.h"
+# include "ReciboDeSueldo.h"
+# include "SistemaLiquidadorDeSueldo.h"
 # include <iomanip>
 # include <iostream>
 
