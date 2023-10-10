@@ -20,5 +20,6 @@ public:
         return calidadDpto;
     }
 
+
 };
 #endif //TPN2_GUARNIERIRAMIREZ_GERENTE_H
