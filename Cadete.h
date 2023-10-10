@@ -10,10 +10,12 @@ class Cadete : public Empleado{
 private:
     int cantidadTareas;
 public:
-    Cadete(const string& n, const string& t, int id, int da, int ct) : Empleado(n, t, id, da), cantidadTareas(ct){}
+    Cadete(const string& n, const string& t, int cu, int da, int ct) : Empleado(n, t, cu, da), cantidadTareas(ct){
+        setSueldoNeto();
+    }
     void setSueldoNeto() override
     {
-        sueldoNeto = 1500.0;
+        sueldoNeto = 1500.5;
     }
     int getcantidadTareas() const
     {

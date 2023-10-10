@@ -10,11 +10,12 @@ using namespace std;
 class Empleado{
 protected: //para que las clases hijas puedan heredar sus atributos
     string nombre, tipoDeEmpleado;
-    int idEmpleado, diasAusente;
+    int cuit, diasAusente;
     double sueldoNeto;
     //ReciboDeSueldo recibosDeSueldo;
 public:
-    Empleado(const string& n, const string& t, int id, int da) : nombre(n), tipoDeEmpleado(t), idEmpleado(id), diasAusente(da){
+    Empleado(const string& n, const string& t, int cu, int da) : nombre(n), tipoDeEmpleado(t), cuit(cu), diasAusente(da){
+        setSueldoNeto();
     }
     virtual void setSueldoNeto(){
         sueldoNeto=0;

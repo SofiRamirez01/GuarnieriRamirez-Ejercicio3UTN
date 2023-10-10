@@ -10,7 +10,9 @@ class Gerente : public Empleado{
 private:
     int calidadDpto;
 public:
-    Gerente(const string& n, const string& t, int id, int da, int cd) : Empleado(n, t, id, da), calidadDpto(cd){}
+    Gerente(const string& n, const string& t, int cu, int da, int cd) : Empleado(n, t, cu, da), calidadDpto(cd){
+        setSueldoNeto();
+    }
     void setSueldoNeto() override
     {
         sueldoNeto = 1000.0;
