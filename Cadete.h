@@ -15,5 +15,9 @@ public:
     {
         sueldoNeto = 1500.0;
     }
+    int getcantidadTareas() const
+    {
+        return cantidadTareas;
+    }
 };
 #endif //TPN2_GUARNIERIRAMIREZ_CADETE_H

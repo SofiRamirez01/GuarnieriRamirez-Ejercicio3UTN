@@ -15,5 +15,10 @@ public:
     {
         sueldoNeto = 1000.0;
     }
+    int getCalidadDpto() const
+    {
+        return calidadDpto;
+    }
+
 };
 #endif //TPN2_GUARNIERIRAMIREZ_GERENTE_H
