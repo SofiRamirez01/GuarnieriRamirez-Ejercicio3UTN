@@ -10,28 +10,31 @@ using namespace std;
 class Empleado{
 protected: //para que las clases hijas puedan heredar sus atributos
     string nombre, tipoDeEmpleado;
-    int cuit, diasAusente;
+    int diasAusente;
+    long cuit;
     double sueldoNeto;
     //ReciboDeSueldo recibosDeSueldo;
 public:
-    Empleado(const string& n, const string& t, int cu, int da) : nombre(n), tipoDeEmpleado(t), cuit(cu), diasAusente(da){
+    Empleado(const string& n, const string& t, long cu, int da) : nombre(n), tipoDeEmpleado(t), cuit(cu), diasAusente(da){
         setSueldoNeto();
     }
     virtual void setSueldoNeto(){
         sueldoNeto=0;
     }
-    int getDiasAustentes(){
+    int getDiasAustentes() const{
         return diasAusente;
     }
-    string getTipoDeEmpleado(){
+    string getTipoDeEmpleado() const{
         return tipoDeEmpleado;
     }
-    string getNombre(){
+    string getNombre() const{
         return nombre;
     }
-    double getSueldoNeto()
-    {
+    double getSueldoNeto() const{
         return sueldoNeto;
+    }
+    long getCuit(){
+        return cuit;
     }
 };
 #endif //TPN2_GUARNIERIRAMIREZ_EMPLEADO_H

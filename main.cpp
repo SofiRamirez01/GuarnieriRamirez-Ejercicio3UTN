@@ -4,11 +4,12 @@
 using namespace std;
 
 int main() {
-
-    Cadete c("Javier", "Cadete", 1213,2,10);
-    c.setSueldoNeto();
-
-    cout << "Sueldo de " << c.getNombre() << ": $" << c.getSueldoNeto() << "Su cantidad de tareas es:"<<c.getcantidadTareas()<<endl;
-
+    Empleado *c = crearNuevoEmpleado();
+    Empleado *d = crearNuevoEmpleado();
+    cout<<left<<setw(8)<<"NOMBRE"<<setw(10)<<"TIPO"<<setw(8)<<"D. AUS"<<setw(10)<<"CUIT"<<setw(10)<<"S.NETO"<<setw(6)<<"RESULT"<<endl;
+    imprimirEmpleado(c);
+    imprimirEmpleado(d);
     return 0;
 }
+
+
