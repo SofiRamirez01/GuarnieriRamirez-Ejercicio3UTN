@@ -15,7 +15,7 @@ public:
     }
     void setSueldoNeto() override
     {
-        sueldoNeto = 1500.5;
+        sueldoNeto = 1500.0;
     }
     int getcantidadTareas() const
     {
