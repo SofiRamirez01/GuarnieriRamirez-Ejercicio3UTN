@@ -1,8 +1,19 @@
 //
-// Created by River on 6/10/2023.
+// Created by sofiv on 9/10/2023.
 //
 
-#ifndef GUARNIERIRAMIREZ_EJERCICIO3UTN_CLASE2_H
-#define GUARNIERIRAMIREZ_EJERCICIO3UTN_CLASE2_H
+#ifndef TPN2_GUARNIERIRAMIREZ_CADETE_H
+#define TPN2_GUARNIERIRAMIREZ_CADETE_H
+#include "Empleado.h"
 
-#endif //GUARNIERIRAMIREZ_EJERCICIO3UTN_CLASE2_H
+class Cadete : public Empleado{
+private:
+    int cantidadTareas;
+public:
+    Cadete(const string& n, const string& t, int id, int da, int ct) : Empleado(n, t, id, da), cantidadTareas(ct){}
+    void setSueldoNeto() override
+    {
+        sueldoNeto = 1500.0;
+    }
+};
+#endif //TPN2_GUARNIERIRAMIREZ_CADETE_H
